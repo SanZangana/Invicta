@@ -1,16 +1,23 @@
 /* Google Fonts - Poppins */
  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 /* General Style rules */
+:root {
+  --primary-color: #3a4052; 
+}
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
    font-family: "Poppins", sans-serif;
  }
-
+html,body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
  /* Navbar style */
 .nav-bar {
-  background-image: linear-gradient(to right,#8B0000, black);
+  background-image: linear-gradient(to right,#9d9d9d, black);
   box-shadow: 0px 3px 5px #000; 
 }
 .nav-text {
@@ -18,7 +25,7 @@
 }
 a {
   text-decoration: none;
-  color: rgb(60, 222, 15);
+  color: #fafafa;
   font-weight: 600;
   transition: ease-in-out 0.3s;
 }
@@ -43,17 +50,19 @@ a:hover {
   margin-top: 2px;
   width: 22px;
 }
-
-
 .navbar-toggler span + span + span {
   width: 22px;
 }
-
 .nav-item {
   margin: 20px;
 }
- /* Container style rules */
- .container {
+.navbar-text {
+  font-weight: 400;
+  font-size: large;
+  color: #fafafa;
+}
+ /* (Index.html page) Container style rules */
+ #container {
    display: flex;
    row-gap: 15px;
    align-items: center;
@@ -63,28 +72,27 @@ a:hover {
    width: 100%;
    overflow: hidden;
  }
- .container .image {
+ #container .image {
    position: absolute;
    height: 100%;
    width: 100%;
    object-fit: cover;
    z-index: -1;
  }
-
- .container header {
+ #container header {
    font-size: 60px;
    color: #fff;
    font-weight: 600;
    text-align: center;
  }
- .container p {
+ #container p {
    font-size: 16px;
    font-weight: 400;
    color: #fff;
    max-width: 550px;
    text-align: center;
  }
- .container .time-content {
+ #container .time-content {
    display: flex;
    column-gap: 30px;
    align-items: center;
@@ -107,6 +115,8 @@ a:hover {
    text-transform: capitalize;
    font-size: 12px;
  }
+
+
  /* Email style rule */
  .email-content {
    display: flex;
@@ -156,9 +166,30 @@ a:hover {
    background-color: #fff;
    color: #0d6a81;
  }
+ .fa-archive {
+  margin-left: 5px;
+ }
+ .fa-home {
+  margin-left: 5px;
+ }
+#videoBG {
+  position: fixed;
+  z-index: -1;
+}
+
+/* Footer styling */
+.container {
+  background-image: linear-gradient(to right,#9d9d9d, black);
+  box-shadow: 0px 3px 5px #000; 
+}
+.footer {
+  background-image: linear-gradient(to right,#9d9d9d, black);
+  box-shadow: 0px 3px 5px #000; 
+}
  @media screen and (max-width: 300px) {
    .container header {
      font-size: 50px;
    }
  }
+
  
