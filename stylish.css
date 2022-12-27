@@ -81,7 +81,6 @@ header ul li a{
     z-index: 9;
     margin-top: 50px;
     transition: all ease 0.5s;
-
 }
 .btn:before {
     content: '';
@@ -174,7 +173,7 @@ header ul li a{
 }
 .sec2-inner .text {
     width: 50px;
-    margin-left: -65px;
+    margin-left: 40px;
     z-index: 9;
 }
 .sec2 .text-inner{
@@ -189,4 +188,7 @@ header ul li a{
     width: 1px;
     height: 100%;
     background: linear-gradient(to top, transparent, #fafafa);
+}
+video {
+    margin-top: 40px;
 }
