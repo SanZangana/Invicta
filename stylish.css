@@ -50,7 +50,7 @@ header ul li a{
 }
 .banner {
     height: 100vh;
-    background: url(../images/me_torrevieja.png) no-repeat;
+    background: url(../images/me_photobooth.jpg) no-repeat;
     background-size: cover;
     background-position: top;
     display: flex;
@@ -165,8 +165,8 @@ header ul li a{
 .sec2-inner{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
 }
 .sec2-inner .img {
     width: auto;
@@ -192,3 +192,15 @@ header ul li a{
 video {
     margin-top: 40px;
 }
+.left-right-sec:nth-child(even) .text{
+    margin-right: -65px;
+    text-align: right;
+}
+.left-right-sec:nth-child(even) .text-inner{
+    margin: 55px 190px 0 0;
+}
+.left-right-sec:nth-child(even) .text-inner:before{
+    left: inherit;
+    right: -30px;
+}
+
