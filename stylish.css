@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    color: #fafafa;
+    background-color: #000;
+    font-family: "Poppins", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Courier New', Courier, monospace;
+}
+h1 {
+    font-size: 70px;
+}
+h2{
+    font-size: 36px;
+}
+h3{
+    font-size: 26px;
+}
+.container-ny{
+    max-width: 1166px;
+    margin: 0 auto;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+header ul{
+    padding-left: 0;
+}
+header ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+header ul li a{
+    color: #fafafa;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.banner {
+    height: 100vh;
+    background-color: url(../Invicta/images/resume-pic.jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    align-items: flex-end;
+}
+.banner .text-ny{
+    text-align: center;
+    padding-bottom: 100px;
+}
+.banner h1{
+    line-height: 80px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
